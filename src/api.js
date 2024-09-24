@@ -1,7 +1,7 @@
 export async function fetchQuestions(category, amount = 10) {
   try {
     const response = await fetch(
-      `https://opentdb.com/api.php?amount=${amount}&category=${category}&type=multiple`
+      `https://opentdb.com/api.php?amount=${amount}&category=${category}&type=multiple&difficulty=medium`
     );
     const data = await response.json();
     console.log('Data:', data);
