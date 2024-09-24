@@ -23,7 +23,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: radial-gradient(circle, #45e066, #00d8ad, #00cae8, #00b6ff, #009aff, #338eff, #547ffd, #716ff6, #976dfb, #ba6afe, #db65fe, #fb5ffb);
+    background-image: url("./images/bg.png");
+    background-size: cover;
   }
   
   .play-button {
@@ -55,7 +56,7 @@
   display: grid;
   gap: 10px;
   justify-items: center; 
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  grid-template-columns: auto auto auto;
   max-width: 100%;
   box-sizing: border-box; 
 }
@@ -155,6 +156,38 @@
 .quiz-page-general-knowledge .answers button{
   background-color: #A6D0DD;
 }
+
+.quiz-page-mythology {
+  background-color: #EA907A;
+  color: #000;
+}
+.quiz-page-mythology .answers button{
+  background-color: #EA907A;
+} 
+
+.quiz-page-art {
+  background-color: #FFC7EA;
+  color: #000;
+}
+.quiz-page-art .answers button{
+  background-color: #FFC7EA;
+} 
+
+.quiz-page-music {
+  background-color: #9376E0;
+  color: #000;
+}
+.quiz-page-music .answers button{
+  background-color: #9376E0;
+} 
+
+.quiz-page-vehicles {
+  background-color: #758694;
+  color: #000;
+}
+.quiz-page-vehicles .answers button{
+  background-color: #758694;
+} 
   
   .quiz-page-science {
     background-color: #CCEEBC;
@@ -171,22 +204,6 @@
   .quiz-page-history .answers button{
     background-color: #A28B55;
   } 
-  
-  .quiz-page-sports {
-    background-color: #7BD3EA;
-    color: #000;
-  }
-  .quiz-page-sports .answers button{
-    background-color: #7BD3EA;
-  } 
-  
-  .quiz-page-art {
-    background-color: #FFC7EA;
-    color: #000;
-  }
-  .quiz-page-art .answers button{
-    background-color: #FFC7EA;
-  } 
 
   .quiz-page-geography {
     background-color: #7BC7FA;
@@ -195,21 +212,13 @@
   .quiz-page-geography .answers button{
     background-color: #7BC7FA;
   } 
-
-  .quiz-page-mythology {
-    background-color: #EA907A;
+  
+  .quiz-page-sports {
+    background-color: #7BD3EA;
     color: #000;
   }
-  .quiz-page-mythology .answers button{
-    background-color: #EA907A;
-  } 
-
-  .quiz-page-music {
-    background-color: #9376E0;
-    color: #000;
-  }
-  .quiz-page-music .answers button{
-    background-color: #9376E0;
+  .quiz-page-sports .answers button{
+    background-color: #7BD3EA;
   } 
 
   /*Game Over Page*/

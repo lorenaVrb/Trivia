@@ -7,14 +7,15 @@ import { fetchQuestions } from '../api';
 function CategoryPage() {
   const navigate = useNavigate();
   const categories = [
-    { id: 9, name: 'General Knowledge' },
+    { id: 9, name: 'General Knowledge'},
+    { id: 20, name: 'Mythology'},
+    { id: 25, name: 'Art'},
+    { id: 12, name: 'Music'},
+    { id: 28, name: 'Vehicles'},
     { id: 17, name: 'Science' },
     { id: 23, name: 'History' },
-    { id: 21, name: 'Sports' },
-    { id: 25, name: 'Art'},
     { id: 22, name: 'Geography'},
-    { id: 20, name: 'Mythology'},
-    { id: 12, name: 'Music'}
+    { id: 21, name: 'Sports' },
   ];
 
   // Ensure you're passing categoryName along with questions and categoryId
