@@ -1,0 +1,220 @@
+.card {
+  background-color: #fff;
+  text-align: center;
+  padding: 2em;
+  border-radius: 25px;
+  overflow-x: hidden;
+  width: 75%;
+}
+
+/*Homepage*/
+.homepage {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: radial-gradient(circle, #45e066, #00d8ad, #00cae8, #00b6ff, #009aff, #338eff, #547ffd, #716ff6, #976dfb, #ba6afe, #db65fe, #fb5ffb);
+}
+
+.play-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #0056b3;
+}
+
+/*Categories*/
+.category-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #45E066;
+}
+
+.category-list {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.category-button {
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.category-button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 1024px) {
+  .category-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+}
+.category-button {
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #218838;
+}
+
+/*Quiz Page*/
+.quiz-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.answers {
+  display: grid;
+  gap: 10px;
+}
+
+.answers button {
+  background-color: #28a745;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .answers {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .answers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .answers {
+    grid-template-columns: 1fr;
+  }
+}
+.quiz-page-general-knowledge {
+  background-color: #A6D0DD;
+  color: #000;
+}
+
+.quiz-page-general-knowledge .answers button {
+  background-color: #A6D0DD;
+}
+
+.quiz-page-science {
+  background-color: #CCEEBC;
+  color: #333;
+}
+
+.quiz-page-science .answers button {
+  background-color: #CCEEBC;
+}
+
+.quiz-page-history {
+  background-color: #A28B55;
+  color: #000;
+}
+
+.quiz-page-history .answers button {
+  background-color: #A28B55;
+}
+
+.quiz-page-sports {
+  background-color: #7BD3EA;
+  color: #000;
+}
+
+.quiz-page-sports .answers button {
+  background-color: #7BD3EA;
+}
+
+.quiz-page-art {
+  background-color: #FFC7EA;
+  color: #000;
+}
+
+.quiz-page-art .answers button {
+  background-color: #FFC7EA;
+}
+
+.quiz-page-geography {
+  background-color: #7BC7FA;
+  color: #000;
+}
+
+.quiz-page-geography .answers button {
+  background-color: #7BC7FA;
+}
+
+.quiz-page-mythology {
+  background-color: #EA907A;
+  color: #000;
+}
+
+.quiz-page-mythology .answers button {
+  background-color: #EA907A;
+}
+
+.quiz-page-music {
+  background-color: #9376E0;
+  color: #000;
+}
+
+.quiz-page-music .answers button {
+  background-color: #9376E0;
+}
+
+/*Game Over Page*/
+.game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.go-buttons {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=App.css.map */
